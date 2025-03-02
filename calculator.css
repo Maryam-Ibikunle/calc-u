@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    background-color: rgb(66, 64, 64);
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    height: 600px;
+    width: min-content;
+    border-radius: 10px;
+}
+.display {
+    font-size: 42px;
+    margin-left:10px;
+    margin-top: 25px;
+    background-color: rgb(191, 185, 185);
+    border: 0;
+    border-radius: 10px;
+}
+.items {
+    background-color: rgb(99, 98, 98);
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    text-align: center;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+}
+.pointer {
+    cursor: pointer;
+}
+button:active {
+    background-color: yellow;
+}
+button:hover {
+    background-color: rgb(191, 185, 185);
+}
+.item-2, .item-3, .item-4, .item-8, .item-12, .item-16, .item-20 {
+    background-color: rgb(11, 210, 147);
+}
+.item-1 {
+    background-color: rgb(255, 0, 13);
+}
