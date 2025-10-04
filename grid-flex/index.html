@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lil Practice</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        body { background: linear-gradient(yellow,yellowgreen, yellowgreen);}
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+            gap:23px;
+            justify-content: center;
+    
+        }
+        .button {
+            
+        }
+        button {
+            font-size: 40px;
+           
+            width: 250px;
+            height: 50px;
+            text-align: center;
+            margin: 20px;
+            border-left: 3px solid rgb(185, 180, 180);
+            border-top: 3px solid rgb(192, 190, 190);
+            border-right:0px solid rgb(192, 190, 190);
+            border-bottom: 0px solid rgb(192, 190, 190);
+            border-radius: 30px;
+        }
+        p {
+            padding: 39px;
+            margin: 10px;
+            background-color:yellow;
+            height: 210px;
+            width: 200px;
+            font-weight: normal;
+            border-radius: 150px;
+            text-align: center;
+            overflow: scroll;
+        }
+    
+    </style>
+    <script defer src="app.js"></script>
+</head>
+<body> 
+    <div class="grid">
+       <p>Lorem ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere debitis dolor deleniti magnam iste adipisci, modi fuga sapiente nihil, et nostrum earum consequatur accusamus nobis doloribus distinctio amet impedit. Alias!dolor sit amet consectetur adipisicing elit. Tenetur nostrum perferendis consequuntur, officia, ut dolor aut adipisci inventore earum accusamus voluptatibus dolore consectetur ad esse sequi repudiandae maiores labore. Velit!ad esse sequi repudiandae maiores labore. Velit!</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nostrum perferendis consequuntur, officia, ut dolor aut adipisci inventore earum accusamus voluptatibus dolore consectetur ad esse sequi repudiandae maiores ad esse sequi repudiandae maiores labore. Velit! labore. Velit!</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nostrum perferendis consequuntur, officia, ut dolor aut adipisci inventore earum accusamus voluptatibus dolore consectetur ad esse sad esse sequi repudiandae maiores labore. Velit!vequi repudiandae maiores labore. Velit!</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nostrum perferendis consequuntur, officia, ut dolor aut ad ad esse sequi repudiandae maiores labore. Velit! ipisci inventore earum accusamus voluptatibus dolore consectetur ad esse sequi repudiandae maiores labore. Velit!</p>
+       <p id="last">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nostrum perferendis consequuntur, officia, ut dolor aut adipisci inventore earum accusamus voluptatibus dolore consectetur ad ad esse sequi repudiandae maiores labore. Velit! esse sequi repudiandae maiores labore. Velit!</p>
+    </div>
+    <div class="button">
+        <button>Click Me</button>
+    </div>
+</body>
+</html>
