@@ -3,33 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator
+    </title>
     <link rel="stylesheet" href="calculator.css">
+    <script>
+        let shown=""
+        function show(symbol){
+            shown+=symbol
+            document.getElementById("display").value=shown
+        }
+        function clear(){
+            document.getElementById("display").value=""
+        }
+        function equals(){
+            
+            document.getElementById("r").innerHTML=eval(document.getElementById("display".value))
+        }
+    </script>
 </head>
 <body>
-    <input type="number" class="display" readonly>
-    <div class="container">
-        <div><button class="item-1 items">C</button></div>
-        <div><button class="item-2 items">()</button></div>
-        <div><button class="item-3 items">%</button></div>
-        <div><button class="item-4 items">/</button></div>
-        <div><button class="item-5 items">7</button></div>
-        <div><button class="item-6 items">8</button></div>
-        <div><button class="item-7 items">9</button></div>
-        <div><button class="item-8 items">x</button></div>
-        <div><button class="item-9 items">4</button></div>
-        <div><button class="item-10 items">5</button></div>
-        <div><button class="item-11 items">6</button></div>
-        <div><button class="item-12 items">-</button></div>
-        <div><button class="item-13 items">1</button></div>
-        <div><button class="item-14 items">2</button></div>
-        <div><button class="item-15 items">3</button></div>
-        <div><button class="item-16 items">+</button></div>
-        <div><button class="item-17 items">#</button></div>
-        <div><button class="item-18 items">0</button></div>
-        <div><button class="item-19 items">.</button></div>
-        <div><button class="item-20 items">=</button></div>
+    <div id="calc">
+    <input id="display">
+        <div id="keys">
+            <button class="item-1 items">C</button>
+            <button class="item-2 items">()</button>
+            <button class="item-3 items">%</button>
+            <button class="item-4 items">/</button>
+            <button class="item-5 items">7</button>
+            <button class="item-6 items">8</button>
+            <button class="item-7 items">9</button>
+            <button class="item-8 items">x</button>
+            <button class="item-9 items">4</button>
+            <button class="item-10 items">5</button>
+            <button class="item-11 items">6</button>
+            <button class="item-12 items">-</button>
+            <button class="item-13 items">1</button>
+            <button class="item-14 items">2</button>
+            <button class="item-15 items">3</button>
+            <button class="item-16 items">+</button>
+            <button class="item-17 items">#</button>
+            <button class="item-18 items">0</button>
+            <button class="item-19 items">.</button>
+            <button onclick="equals()"class="item-20 items">=</button>
+        </div>
     </div>
-    <script src="calculator.js"></script>
+    <p id="r">hello</p>
+    <script>
+       
+    </script>
 </body>
 </html>

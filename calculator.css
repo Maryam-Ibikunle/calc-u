@@ -2,8 +2,8 @@
     padding: 0;
     margin: 0;
 }
-.container {
-    display: grid;
+#keys {
+    /* display: grid;
     grid-template-columns: repeat(4, 100px);
     background-color: rgb(66, 64, 64);
     justify-content: space-between;
@@ -12,9 +12,17 @@
     padding: 20px;
     height: 600px;
     width: min-content;
-    border-radius: 10px;
+    border-radius: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 400px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+
 }
-.display {
+#display {
     font-size: 42px;
     margin-left:10px;
     margin-top: 25px;
@@ -32,6 +40,7 @@
     border-radius: 30px;
     cursor: pointer;
     color: white;
+    flex: 0 0 calc(25% - 10px);
 }
 .pointer {
     cursor: pointer;
