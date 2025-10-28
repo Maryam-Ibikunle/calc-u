@@ -38,7 +38,7 @@
     width: 50vw;
     aspect-ratio: 5/1;
 }
-.items {
+.items, #equal {
     
     background-color: rgb(99, 98, 98);
     width: 4vw;
