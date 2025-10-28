@@ -5,21 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator
     </title>
-    <link rel="stylesheet" href="calculator.css">
-    <script>
-        let shown=""
-        function show(symbol){
-            shown+=symbol
-            document.getElementById("display").value=shown
-        }
-        function clear(){
-            document.getElementById("display").value=""
-        }
-        function equals(){
-            
-            document.getElementById("r").innerHTML=eval(document.getElementById("display".value))
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <div id="calc">
@@ -47,9 +34,6 @@
             <button onclick="equals()"class="item-20 items">=</button>
         </div>
     </div>
-    <p id="r">hello</p>
-    <script>
-       
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
