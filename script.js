@@ -22,6 +22,6 @@ equal.addEventListener('click', ()=>{
     },2000)
     display.value = "insert an operation before a bracket"
 }})
-clear.addEventListener('click', ()=>{
-    display.value = ""
-})
+// clear.addEventListener('click', ()=>{
+//     display.value = ""
+// })
